@@ -1,28 +1,15 @@
-function isPalindrome(string2) {
-    let nomeEmMinusculo = string2.toLowerCase();
-    let result = "";
-    let result2 = "";
-    let initialIndice = nomeEmMinusculo.length - 1;
-  
-    for (let id = 0; id < nomeEmMinusculo.length; id++) {
-      result += nomeEmMinusculo[id]; 
-       
-      console.log (result)
-  
-      for (let id = initialIndice; id >= 0; id--) 
-        result2 = nomeEmMinusculo[id] + result2
-  
-      console.log (result2)
-  
-        if (result == result2) {
-          return true;
-        }
-      }
+function isPalindrome(string) {
+  let minusculo = string.toLowerCase().replace ();
+  let texto = string.length;
+
+  for (i = 0; i < texto ; i++) {
+    if (minusculo[i] !== minusculo[texto - 1 -i]) {
       return false;
-    }
-  
-  isPalindrome("Radar");
-  
+  }
+  return true;
+}
+}
+isPalindrome("Radar");
 
 function arrayMaxMin(arr) {
   /* Seu código aqui */

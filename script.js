@@ -12,11 +12,26 @@ function isPalindrome(string) {
 isPalindrome("Radar");
 
 function arrayMaxMin(array) {
-  let menor = 0;
-  let maior = 0;
+ 
 
-  for (i = 0; i < array.length; i++) {}
+  let max = 0;
+  let min = 0;
+
+  for (let i = 0; i < array.length; i++) {
+    let current = array[i];
+
+    if (current > array[max]) {
+      max = i;
+    }
+    if (current > array[min]) {
+      min = i;
+    }
+    return { max, min };
+  }
+  
 }
+
+console.log (arrayMaxMin[3,5,6,2,1,4])
 
 //Requisitos
 //Para desenvolver essa tarefa você deve cumprir alguns requisitos:
